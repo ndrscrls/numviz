@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="en">
+
+<title>Titulo del algoritmo</title>
+
+<link href="numviz/numviz.css" rel="stylesheet" type="text/css" />
+<link href="libs/mathscribe/jqmath-0.4.0.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+	<script type="text/javascript" src="libs/jquery-2.1.0.min.js"></script>  
+    <script type="text/javascript" src="libs/snap.svg-min.js"></script>  
+    <script type="text/javascript" src="libs/parser.js"></script>       
+    <script type="text/javascript" src="libs/mathscribe/jqmath-etc-0.4.0.min.js"></script>  
+	<script type="text/javascript" src="numviz/numviz.js"></script>  
+	<script type="text/javascript" src="base.js"></script>  
+    <script type="text/javascript">
+		$(function(){
+			init();
+		});
+    </script>
+
+    <div>
+    	<table id="algorithm_controls"></table>
+    </div>
+    <div>
+        <table>
+            <td>
+                <svg width="550" height="400" id="canvas">
+                </svg>
+            </td>
+            <td>
+                <ul id="algorithm_steps" class="steps_ul">
+                    <li>Aqui puede poner los pasos del algoritmo</li>
+                    <li>Las expresiones matemáticas puede ponerlas entre signos de $$ para que se muestren con un estilo apropiado por ejemplo $x_2 = x_1 - [(x_1 - x_0)*f(x_1)]/[f(x_1) - f(x_0)]$</li>
+                    <li>Las expresiones tienen una notación parecida a la de LaTex</li>
+                    <li>Paso 4</li>
+                </ul>
+            </td>
+        </table>
+    </div>
+    <div>
+    	<table id="animation_controls"></table>
+    </div>
+</body>
+</html>

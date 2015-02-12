@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="en">
+
+<title>Interpolación por polinomios: Newton</title>
+
+<link href="numviz/numviz.css" rel="stylesheet" type="text/css" />
+<link href="libs/mathscribe/jqmath-0.4.0.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+	<script type="text/javascript" src="libs/jquery-2.1.0.min.js"></script>  
+    <script type="text/javascript" src="libs/snap.svg-min.js"></script>  
+    <script type="text/javascript" src="libs/parser.js"></script>  
+    <script type="text/javascript" src="libs/mathscribe/jqmath-etc-0.4.0.min.js"></script>  
+	<script type="text/javascript" src="numviz/numviz.js"></script>  
+	<script type="text/javascript" src="newton-interpolacion.js"></script>  
+    <script type="text/javascript">
+		$(function(){
+			init();
+		});
+    </script>
+
+    <div>
+    	<table id="algorithm_controls"></table>
+    </div>
+    <div>
+        <table>
+            <td>
+                <svg width="550" height="400" id="canvas">
+                </svg>
+            </td>
+            <td>
+                <ul id="algorithm_steps" class="steps_ul" style="list-style-type: none">
+                    <li>
+					</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </td>
+        </table>
+    </div>
+    <div>
+    	<table id="animation_controls"></table>
+    </div>
+</body>
+</html>

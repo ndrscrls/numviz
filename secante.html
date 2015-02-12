@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="en">
+
+<title>Método de la secante</title>
+
+<link href="numviz/numviz.css" rel="stylesheet" type="text/css" />
+<link href="libs/mathscribe/jqmath-0.4.0.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+	<script type="text/javascript" src="libs/jquery-2.1.0.min.js"></script>  
+    <script type="text/javascript" src="libs/snap.svg-min.js"></script>
+    <script type="text/javascript" src="libs/parser.js"></script>      
+    <script type="text/javascript" src="libs/mathscribe/jqmath-etc-0.4.0.min.js"></script>  
+	<script type="text/javascript" src="numviz/numviz.js"></script>  
+	<script type="text/javascript" src="secante.js"></script>  
+    <script type="text/javascript">
+		$(function(){
+			init();
+		});
+    </script>
+
+    <div>
+    	<table id="algorithm_controls"></table>
+    </div>
+    <div>
+        <table>
+            <td>
+                <svg width="550" height="400" id="canvas">
+                </svg>
+            </td>
+            <td>
+                <ul id="algorithm_steps" class="steps_ul">
+                    <li>Definir $x_0$, $f(x_0)$, $x_1$ y $f(x_1)$</li>
+                    <li>Trazar la secante que va de $(x_0, f(x_0))$ a $(x_1, f(x_1))$</li>
+                    <li>Hallar la intersección de la secante con el eje x, $x_2 = x_1 - [(x_1 - x_0)*f(x_1)]/[f(x_1) - f(x_0)]$</li>
+                    <li>Si $f(x_2) < Tolerancia$ terminar, si no: hacer $x_0' = x_1$ y $x_1' = x_2$ e ir al paso 1</li>
+                </ul>
+            </td>
+        </table>
+    </div>
+    <div>
+    	<table id="animation_controls"></table>
+    </div>
+</body>
+</html>

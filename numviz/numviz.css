@@ -1,0 +1,17 @@
+.steps_ul{
+	list-style-type: decimal;
+}
+.steps_ul li{
+	margin-bottom: 8px;
+}
+math{
+	font-size: 17px;
+}
+.steps_highlight{
+	list-style-image: url(images/arrow-right.png);
+	color: navy;
+}
+body{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
